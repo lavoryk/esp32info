@@ -18,6 +18,7 @@ void setup()
   Serial.print("Chip has Bluetooth LE: "); Serial.println(CHIP_FEATURE_BLE&chip_info.features ? "yes": "no");
   Serial.print("Chip has Bluetooth Classic: "); Serial.println(CHIP_FEATURE_BT&chip_info.features ? "yes": "no");
   Serial.println("-----------------");  
+  Serial.printf("EspClass::getChipRevision %d\n", ESP.getChipRevision());
   Serial.printf("EspClass::getCpuFreqMHz %d\n", ESP.getCpuFreqMHz());
   Serial.printf("EspClass::getSdkVersion %s\n", ESP.getSdkVersion());
   Serial.printf("EspClass::getFlashChipSize %d\n", ESP.getFlashChipSize());
